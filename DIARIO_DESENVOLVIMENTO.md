@@ -38,3 +38,15 @@ do projeto Flappy Bird com IA (NEAT).
 
 **Próximos passos:**
 - Programar o jogo Flappy Bird (pássaro, canos, pontuação, colisão)
+---
+
+## Dia 3 — Criação do pássaro (Bird)
+
+**O que foi feito:**
+- Criação da classe Bird, representando o pássaro do jogo
+- Implementação da física de pulo e queda (gravidade, velocidade, ângulo)
+- Desenho do pássaro usando formas geométricas (círculos e triângulo)
+
+**O que aprendi:**
+- Como simular gravidade e pulo usando fórmulas de movimento acelerado
+- Como organizar comportamento e dados de um objeto do jogo usando uma classe em Python
