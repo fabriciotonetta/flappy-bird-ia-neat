@@ -64,3 +64,23 @@ do projeto Flappy Bird com IA (NEAT).
   que se alternam (loop infinito)
 - Como detectar colisão entre objetos usando retângulos (bounding boxes)
 - Uso de números aleatórios (random) para gerar variação no jogo
+---
+
+## Dia 5 — Loop do jogo e primeiro teste visual
+
+**O que foi feito:**
+- Criação da função que desenha todos os elementos do jogo em cada frame
+- Implementação do loop principal do jogo (mover, verificar, desenhar)
+- Captura dos frames do jogo e geração de um vídeo .mp4 para visualização
+  dentro do Google Colab (já que não há tela física no ambiente)
+- Primeiro teste visual funcional do jogo, com uma decisão de pulo simples
+  e temporária (a IA real será implementada na próxima etapa)
+
+**O que aprendi:**
+- Estrutura clássica de um "game loop": mover → verificar regras → desenhar
+- Como capturar frames de uma aplicação Pygame e transformá-los em vídeo
+  usando OpenCV, contornando a limitação de não haver tela física no Colab
+
+**Próximos passos:**
+- Substituir a decisão de pulo simples pela Inteligência Artificial (NEAT)
+- Treinar uma população de pássaros simultaneamente
