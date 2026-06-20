@@ -50,3 +50,17 @@ do projeto Flappy Bird com IA (NEAT).
 **O que aprendi:**
 - Como simular gravidade e pulo usando fórmulas de movimento acelerado
 - Como organizar comportamento e dados de um objeto do jogo usando uma classe em Python
+---
+
+## Dia 4 — Criação dos canos (Pipe) e do chão (Base)
+
+**O que foi feito:**
+- Criação da classe Pipe, com geração aleatória da altura do espaço (gap)
+- Implementação da detecção de colisão entre pássaro e canos
+- Criação da classe Base, com efeito de "chão infinito" usando duas faixas
+
+**O que aprendi:**
+- Como simular movimento de cenário usando duas cópias de uma imagem/forma
+  que se alternam (loop infinito)
+- Como detectar colisão entre objetos usando retângulos (bounding boxes)
+- Uso de números aleatórios (random) para gerar variação no jogo
