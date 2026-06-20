@@ -144,3 +144,27 @@ do projeto Flappy Bird com IA (NEAT).
   bugs de "saltar" elementos
 - Como cada "indivíduo" de uma população em NEAT é avaliado de forma
   independente, mas compartilhando o mesmo ambiente (os mesmos canos)
+---
+
+## Dia 9 — Treinamento real com NEAT
+
+**O que foi feito:**
+- Implementação da função "avaliar_genomas", que conecta cada genoma a
+  uma rede neural e a um pássaro, roda o jogo, e atribui fitness com base
+  em tempo de sobrevivência e canos ultrapassados
+- Implementação da função "rodar_treinamento", que inicia a população
+  do NEAT e executa o treinamento por várias gerações
+- Correção de 2 erros de configuração: parâmetros 'no_fitness_termination'
+  e o bloco 'response_*' (response_init_mean, etc.), exigidos pela versão
+  mais recente do neat-python, ausentes na configuração original
+- Treinamento executado com sucesso, mostrando evolução da pontuação
+  e do fitness ao longo das gerações
+
+**O que aprendi:**
+- Como conectar genomas (cérebros) do NEAT a redes neurais funcionais
+  usando "neat.nn.FeedForwardNetwork.create()"
+- Como desenhar uma função de fitness (recompensas e penalidades) que
+  guia o comportamento que queremos que a IA aprenda
+- Que bibliotecas de código evoluem com o tempo, e que ler e interpretar
+  mensagens de erro é uma habilidade essencial para resolver
+  incompatibilidades de versão
