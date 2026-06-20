@@ -107,3 +107,19 @@ do projeto Flappy Bird com IA (NEAT).
 - A função de teste visual ainda não verifica colisão entre o pássaro
   e os canos — isso será implementado formalmente na Etapa 5, junto
   com a lógica completa do jogo e a IA
+---
+
+## Dia 7 — Configuração do NEAT
+
+**O que foi feito:**
+- Criação do arquivo de configuração do NEAT (config-feedforward.txt)
+- Definição da estrutura da rede neural: 3 entradas (altura do pássaro,
+  distância até o topo e até a base do próximo cano) e 1 saída (pular ou não)
+- Definição do tamanho da população (50 redes neurais por geração)
+
+**O que aprendi:**
+- O que é o algoritmo NEAT e como ele evolui redes neurais através de
+  seleção, cruzamento e mutação, sem precisar de exemplos prontos
+- Como definir entradas e saídas de uma rede neural de acordo com o
+  problema que ela precisa resolver
+- Estrutura de um arquivo de configuração do NEAT-Python
