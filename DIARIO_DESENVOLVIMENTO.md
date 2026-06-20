@@ -84,3 +84,26 @@ do projeto Flappy Bird com IA (NEAT).
 **Próximos passos:**
 - Substituir a decisão de pulo simples pela Inteligência Artificial (NEAT)
 - Treinar uma população de pássaros simultaneamente
+---
+
+## Dia 6 — Correção de bugs no teste visual
+
+**O que foi feito:**
+- Identificado que o vídeo gerado pelo OpenCV (codec mp4v) não era
+  reproduzido corretamente nos players de navegador; corrigido
+  convertendo o vídeo para o codec H.264 usando ffmpeg
+- Corrigido bug na lógica provisória de pulo do pássaro: a condição
+  inicial verificava uma variável (`velocidade`) que nunca era
+  atualizada durante a queda, fazendo o pássaro nunca pular
+- Ajustada a condição de pulo para se basear na posição vertical do
+  pássaro (`y > 600`), mantendo-o numa faixa de altura estável
+
+**O que aprendi:**
+- Nem todo arquivo de vídeo "válido" é reproduzível em qualquer player;
+  o codec de gravação importa para compatibilidade com navegadores
+- Importância de testar e observar o comportamento visual do jogo
+  cuidadosamente, pois bugs de lógica nem sempre geram erros/avisos,
+  apenas comportamento incorreto
+- A função de teste visual ainda não verifica colisão entre o pássaro
+  e os canos — isso será implementado formalmente na Etapa 5, junto
+  com a lógica completa do jogo e a IA
