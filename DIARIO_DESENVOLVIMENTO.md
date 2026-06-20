@@ -123,3 +123,24 @@ do projeto Flappy Bird com IA (NEAT).
 - Como definir entradas e saídas de uma rede neural de acordo com o
   problema que ela precisa resolver
 - Estrutura de um arquivo de configuração do NEAT-Python
+---
+
+## Dia 8 — Suporte a múltiplos pássaros e colisão ativa
+
+**O que foi feito:**
+- Criação da função "encontrar_cano_proximo", que identifica qual cano
+  cada pássaro deve observar para tomar decisões
+- Adaptação do loop do jogo para suportar uma lista de vários pássaros
+  simultâneos, cada um avaliado de forma independente
+- Ativação da detecção de colisão: pássaros que batem em canos ou saem
+  da tela são removidos da população em tempo real
+- Atualização da função de salvar vídeo para já converter automaticamente
+  para o codec H.264 (correção da etapa anterior incorporada de forma definitiva)
+
+**O que aprendi:**
+- Como gerenciar uma lista de objetos que precisa ser modificada (remoção
+  de itens) durante o próprio loop que a percorre, sem causar erros
+- Por que percorrer listas de trás para frente ao remover itens evita
+  bugs de "saltar" elementos
+- Como cada "indivíduo" de uma população em NEAT é avaliado de forma
+  independente, mas compartilhando o mesmo ambiente (os mesmos canos)
