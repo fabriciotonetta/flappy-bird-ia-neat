@@ -168,3 +168,26 @@ do projeto Flappy Bird com IA (NEAT).
 - Que bibliotecas de código evoluem com o tempo, e que ler e interpretar
   mensagens de erro é uma habilidade essencial para resolver
   incompatibilidades de versão
+---
+
+## Dia 10 — Visualização da rede neural em tempo real
+
+**O que foi feito:**
+- Criação da função "desenhar_rede_neural", que renderiza visualmente
+  os neurônios (entradas, ocultos e saída) e suas conexões, com cores
+  e espessuras refletindo os valores reais de ativação e peso
+- Criação da demonstração final, usando o melhor genoma treinado para
+  jogar continuamente, com o painel da rede neural sobreposto ao jogo
+- Geração do vídeo final do projeto, mostrando a IA jogando com sucesso
+  enquanto sua "tomada de decisão" é visível em tempo real
+
+**O que aprendi:**
+- Como o neat-python armazena internamente os valores de ativação de
+  cada neurônio (atributo "net.values"), permitindo inspecionar o
+  funcionamento interno da rede após cada chamada de "activate()"
+- Como mapear a estrutura de uma rede neural (nós de entrada, ocultos
+  e saída) em posições visuais organizadas, mesmo quando essa estrutura
+  varia entre genomas diferentes (já que o NEAT pode adicionar neurônios
+  ocultos durante a evolução)
+- Como sobrepor elementos gráficos (painel semi-transparente) por cima
+  de uma cena já desenhada, usando "Surface" e "set_alpha" do Pygame
