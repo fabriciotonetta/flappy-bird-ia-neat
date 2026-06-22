@@ -191,3 +191,24 @@ do projeto Flappy Bird com IA (NEAT).
   ocultos durante a evolução)
 - Como sobrepor elementos gráficos (painel semi-transparente) por cima
   de uma cena já desenhada, usando "Surface" e "set_alpha" do Pygame
+---
+
+## Dia 11 — Correção de performance no treinamento
+
+**O que foi feito:**
+- Identificado que o treinamento estava extremamente lento (cerca de 6 horas)
+  porque a função "avaliar_genomas" desenhava graficamente a tela a cada
+  frame, para cada uma das 50 redes neurais, em todas as gerações
+- Removida a chamada de "desenhar_tela()" e a limitação de FPS do loop de
+  treinamento, já que renderização gráfica não é necessária durante o
+  treinamento (só precisamos dos cálculos de física, colisão e decisão)
+- Resolvido conflito de sincronização entre duas versões do notebook
+  (aberto em mais de uma aba/sessão), mantendo a versão mais avançada
+- Treinamento re-executado com sucesso, agora em poucos minutos
+
+**O que aprendi:**
+- Renderização gráfica é computacionalmente cara; em loops de treinamento
+  de IA, deve-se evitar desenhar na tela, deixando isso só para
+  demonstrações finais
+- Como o Google Colab sincroniza notebooks entre abas/sessões diferentes,
+  e como revisar e resolver conflitos de versões usando "Mostrar diferenças"
