@@ -232,3 +232,14 @@ de performance. Aprendi que boa parte do trabalho em IA não está só em
 "treinar um modelo", mas em estruturar o problema corretamente
 (entradas, saídas, função de fitness) e resolver problemas de
 engenharia no caminho.
+---
+## Dia 13 — Upload retroativo dos prints
+
+**O que foi feito:**
+- Identificado que os prints tirados durante o desenvolvimento nunca
+  haviam sido enviados ao GitHub (ficavam salvos só localmente)
+- Upload de todos os prints para a pasta screenshots/
+
+**O que aprendi:**
+- Tirar um print não sincroniza automaticamente com o repositório;
+  é preciso fazer o upload manualmente, assim como qualquer outro arquivo
