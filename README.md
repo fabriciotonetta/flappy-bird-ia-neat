@@ -83,7 +83,7 @@ flappy-bird-ia-neat/
 > IA jogando com a rede neural visível em tempo real, controlando o
 > pássaro através das decisões tomadas pelos 3 neurônios de entrada.
 
-![Demonstração final](screenshots/print08_ia_jogando_rede_neural.png)
+print 08 — IA jogando com rede neural visível (resultado final).png
 
 ## 🧩 Desafios técnicos superados
 
