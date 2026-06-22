@@ -212,3 +212,23 @@ do projeto Flappy Bird com IA (NEAT).
   demonstrações finais
 - Como o Google Colab sincroniza notebooks entre abas/sessões diferentes,
   e como revisar e resolver conflitos de versões usando "Mostrar diferenças"
+---
+
+## Dia 12 — Documentação final e encerramento do projeto
+
+**O que foi feito:**
+- Finalização do README.md com descrição completa, tabela de
+  tecnologias, estrutura do projeto, desafios técnicos e instruções
+  de execução
+- Criação de descrição detalhada do projeto em docs/descricao_projeto.md
+- Criação de texto de apresentação para recrutadores em
+  docs/texto_para_recrutador.md, com versão curta e versão completa
+
+**Reflexão final:**
+Este projeto foi minha primeira experiência construindo uma IA do
+início ao fim: desde a física básica de um jogo até um algoritmo
+evolutivo completo, passando por depuração de bugs reais e otimização
+de performance. Aprendi que boa parte do trabalho em IA não está só em
+"treinar um modelo", mas em estruturar o problema corretamente
+(entradas, saídas, função de fitness) e resolver problemas de
+engenharia no caminho.
